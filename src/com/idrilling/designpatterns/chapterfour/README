@@ -1,0 +1,13 @@
+接口隔离原则
+1.Client should not be forced to depend upon interfaces that they don't use 
+1.客户端不应该依赖它不需要的接口。
+2.The dependency of one class to another one should depend on the smallest possible
+2.类之间的依赖应该建立在最小的接口上
+
+
+接口隔离原则是对借口的定义同时也是对类的定义，接口和类尽量使用接口隔离原则或原子类来组装。
+划分根据：
+1.接口只服务于一个模块或业务逻辑。
+2.通过业务逻辑压榨机口的public方法，接口时常去回顾，尽量让接口达到“满身金骨肉”，而不是“肥嘟嘟”的一大堆方法。
+3.已经被污染的接口，尽量去修改，若变更的风险较大，则 采用适配器模式进行转化处理；
+4.了解环境拒绝盲从，每个项目或产品都有特定的环境因素。
